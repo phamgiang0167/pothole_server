@@ -50,5 +50,9 @@ const PotholeSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  status: {
+    type: String,
+    required: true,
+  },
 });
 export default mongoose.model("Pothole", PotholeSchema);
